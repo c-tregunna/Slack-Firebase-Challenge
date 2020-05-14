@@ -16,29 +16,56 @@ h1 {
 	text-shadow: 0 3px 4px #bbb;
 }
 
+h2 {
+	font-size: 3em;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+
+h2 span.firebase {
+	font-weight: 500;
+	color: #ffca99;
+}
+ span.js {
+	font-weight: 500;
+	color: white;
+ }
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.25em;
+	font-weight: 500;
+	color: #ffca99;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
 /* HEADER */
 
 .header {
-	border-bottom: 3px solid #ffca99;
-	padding: 5px 20px 40px 20px;
+	border-bottom: 4px solid #ffca99;
+	padding: 5px 40px 40px 40px;
 }
 
 .top {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .star-no {
 	display: inline-block;
+	margin-left: 16px;
 }
 
-.title {
-	float: left;
-	width: 50%;
-	display: inline-block;
-	margin: 60px 0 0 80px;
 
-}
 
 	/* Buttons */
 
@@ -65,11 +92,36 @@ h1 {
 	align-items: center;
 }
 
+.social img {
+	margin: auto 10px;
+}
+
 /* MAIN */
 
 main {
 	background-color: #4a463f;
+	color: white;
+	padding-top: 100px
 }
+
+.columns {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+	margin: 30px auto 0;
+	width:80%;
+	text-align: center;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
 
 /* LINKS */
 
@@ -108,10 +160,63 @@ nav ul li {
 	opacity: .6;
 }
 
+.col-icons {
+	width: 50px;
+	height: 50px;
+	filter: invert(100%);
+}
+
 .logo {
-	float: right;
-	display: inline-block;
-	margin-right: 80px;
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+	.title {
+		float: left;
+		width: 40%;
+		/* display: inline-block; */
+		margin: 60px 0 0 80px;
+	}
+
+	.logo {
+		float: right;
+		/* display: inline-block; */
+		margin-top: 100px;
+		width: 40%;
+	}
+
+	.top {
+		flex-direction: row;
+	}
+
+	.col-1,
+	.col-2,
+	.col-3 {
+		margin: 40px auto;
+		width: 28%;
+		text-align: left;
+	}
+
+	.col-icons {
+		height: 30px;
+		width: 30px;
+		/* display: inline-block; */
+		float: left;
+		margin-right: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.title {
+
+		width: 50%;
+	}
 }
 
 	/* ---- Float clearfix ---- */
