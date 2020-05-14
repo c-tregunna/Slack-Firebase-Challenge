@@ -10,6 +10,12 @@ body {
 	font-size: 1em;
 }
 
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
 /* HEADINGS */
 h1 {
 	font-size: 4em;
