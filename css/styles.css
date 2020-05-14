@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #51575B;
+	font-size: 1em;
+}
+
+/* HEADINGS */
+h1 {
+	font-size: 4em;
+	text-shadow: 0 3px 4px #bbb;
+}
+
+/* HEADER */
+
+.header {
+	border-bottom: 3px solid #ffca99;
+	padding: 5px 20px 40px 20px;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.star-no {
+	display: inline-block;
+}
+
+.title {
+	float: left;
+	width: 50%;
+	display: inline-block;
+	margin: 60px 0 0 80px;
+
+}
+
+	/* Buttons */
+
+.download-top,
+.download {
+	background-color: #3dafbe;
+	color: white;
+	padding: 10px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 0 3px 4px #bbb;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+.download {
+	margin-top: 10px;
+	padding: 10px 20px;
+}
+
+.social {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* MAIN */
+
+main {
+	background-color: #4a463f;
+}
+
+/* LINKS */
+
+nav a {
+	text-decoration: none;
+	color: #51575b;
+}
+
+/* NAVIGATION */
+
+nav {
+	width: 30%;
+	/* margin: auto; */
+}
+nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 40px;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+/* IMAGES */
+.star {
+	width: 20px;
+	height: 20px;
+	opacity: .6;
+}
+
+.icons {
+	width: 30px;
+	height: 30px;
+	opacity: .6;
+}
+
+.logo {
+	float: right;
+	display: inline-block;
+	margin-right: 80px;
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
