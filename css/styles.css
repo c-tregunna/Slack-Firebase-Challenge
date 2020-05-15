@@ -95,6 +95,17 @@ h4 {
 	padding: 10px 20px;
 }
 
+.download-top:hover,
+.download:hover {
+	color: black;
+}
+
+.download-top:focus,
+.download:focus {
+	outline: 0;
+	background-color: #318d99;
+}
+
 .social {
 	display: none;
 }
