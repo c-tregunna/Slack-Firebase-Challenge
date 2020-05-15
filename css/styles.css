@@ -61,14 +61,17 @@ h4 {
 
 .top {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
 
+.star-top {
+	width: 100%;
+	text-align: center;
+}
 .star-no {
 	display: inline-block;
-	margin-left: 16px;
 }
 
 
@@ -93,9 +96,7 @@ h4 {
 }
 
 .social {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	display: none;
 }
 
 .social img {
@@ -128,6 +129,18 @@ section {
 	margin-bottom: 30px;
 }
 
+footer {
+	background-color: white;
+	height: 60px;
+	padding: 20px;
+	border-top: 4px solid #ffca99;
+	text-align: center;
+}
+
+footer img {
+	margin: 10px;
+}
+
 
 /* LINKS */
 
@@ -139,8 +152,8 @@ nav a {
 /* NAVIGATION */
 
 nav {
-	width: 30%;
-	/* margin: auto; */
+	width: 100%;
+	margin: auto;
 }
 nav ul {
 	display: flex;
@@ -183,6 +196,11 @@ nav ul li {
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
+	.social {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 	.title {
 		float: left;
 		width: 40%;
@@ -201,6 +219,15 @@ nav ul li {
 		flex-direction: row;
 	}
 
+	nav {
+		width: 40%;
+		margin: auto;
+	}
+
+	.star-top {
+		width: 20%;
+	}
+
 	.col-1,
 	.col-2,
 	.col-3 {
@@ -215,6 +242,10 @@ nav ul li {
 		/* display: inline-block; */
 		float: left;
 		margin-right: 20px;
+	}
+
+	footer {
+		display: none;
 	}
 }
 
